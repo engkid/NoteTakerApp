@@ -1,0 +1,73 @@
+name: NoteTakerApp
+options:
+  minimumXcodeGenVersion: 2.38.0
+  deploymentTarget:
+    iOS: 17.0
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.example.dailyreminder
+    DEVELOPMENT_TEAM: ""
+
+targets:
+  DailyReminder:
+    type: application
+    platform: iOS
+    sources: [Sources/App]
+    dependencies:
+      - target: Domain
+      - target: DI
+    settings:
+      base:
+        INFOPLIST_FILE: Info.plist
+
+  Domain:
+    type: framework
+    platform: iOS
+    sources: [Sources/Domain]
+
+  SharedKit:
+    type: framework
+    platform: iOS
+    sources: [Sources/SharedKit]
+
+  Persistence:
+    type: framework
+    platform: iOS
+    sources: [Sources/Persistence]
+    dependencies:
+      - target: Domain
+      - target: SharedKit
+
+  Notifications:
+    type: framework
+    platform: iOS
+    sources: [Sources/Notifications]
+    dependencies:
+      - target: Domain
+      - target: SharedKit
+
+  Background:
+    type: framework
+    platform: iOS
+    sources: [Sources/Background]
+    dependencies:
+      - target: Domain
+      - target: Notifications
+      - target: SharedKit
+
+  DI:
+    type: framework
+    platform: iOS
+    sources: [Sources/DI]
+    dependencies:
+      - target: Domain
+      - target: Persistence
+      - target: Notifications
+      - target: Background
+      - target: SharedKit
+      - package: Factory
+
+packages:
+  Factory:
+    url: https://github.com/hmlongco/Factory.git
+    from: 2.4.0
