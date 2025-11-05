@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		428560342EB9DB71002521FE /* Background in Frameworks */ = {isa = PBXBuildFile; productRef = 428560332EB9DB71002521FE /* Background */; };
-		428560362EB9DB74002521FE /* DI in Frameworks */ = {isa = PBXBuildFile; productRef = 428560352EB9DB74002521FE /* DI */; };
-		428560382EB9DB78002521FE /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 428560372EB9DB78002521FE /* Domain */; };
-		4285603A2EB9DB7C002521FE /* Notifications in Frameworks */ = {isa = PBXBuildFile; productRef = 428560392EB9DB7C002521FE /* Notifications */; };
-		4285603E2EB9DB83002521FE /* SharedKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4285603D2EB9DB83002521FE /* SharedKit */; };
-		428560422EB9E74C002521FE /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 428560412EB9E74C002521FE /* Persistence */; };
+		428EA65E2EBB30DD00010211 /* Background in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA65D2EBB30DD00010211 /* Background */; };
+		428EA6602EBB30E000010211 /* DI in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA65F2EBB30E000010211 /* DI */; };
+		428EA6622EBB30E300010211 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA6612EBB30E300010211 /* Domain */; };
+		428EA6642EBB30E600010211 /* Notifications in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA6632EBB30E600010211 /* Notifications */; };
+		428EA6662EBB30E900010211 /* Persistence in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA6652EBB30E900010211 /* Persistence */; };
+		428EA6682EBB30EC00010211 /* SharedKit in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA6672EBB30EC00010211 /* SharedKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,12 +33,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4285603A2EB9DB7C002521FE /* Notifications in Frameworks */,
-				428560422EB9E74C002521FE /* Persistence in Frameworks */,
-				428560342EB9DB71002521FE /* Background in Frameworks */,
-				428560382EB9DB78002521FE /* Domain in Frameworks */,
-				4285603E2EB9DB83002521FE /* SharedKit in Frameworks */,
-				428560362EB9DB74002521FE /* DI in Frameworks */,
+				428EA6622EBB30E300010211 /* Domain in Frameworks */,
+				428EA6662EBB30E900010211 /* Persistence in Frameworks */,
+				428EA6682EBB30EC00010211 /* SharedKit in Frameworks */,
+				428EA65E2EBB30DD00010211 /* Background in Frameworks */,
+				428EA6602EBB30E000010211 /* DI in Frameworks */,
+				428EA6642EBB30E600010211 /* Notifications in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,12 +90,12 @@
 			);
 			name = NoteTakerApp;
 			packageProductDependencies = (
-				428560332EB9DB71002521FE /* Background */,
-				428560352EB9DB74002521FE /* DI */,
-				428560372EB9DB78002521FE /* Domain */,
-				428560392EB9DB7C002521FE /* Notifications */,
-				4285603D2EB9DB83002521FE /* SharedKit */,
-				428560412EB9E74C002521FE /* Persistence */,
+				428EA65D2EBB30DD00010211 /* Background */,
+				428EA65F2EBB30E000010211 /* DI */,
+				428EA6612EBB30E300010211 /* Domain */,
+				428EA6632EBB30E600010211 /* Notifications */,
+				428EA6652EBB30E900010211 /* Persistence */,
+				428EA6672EBB30EC00010211 /* SharedKit */,
 			);
 			productName = NoteTakerApp;
 			productReference = 428560122EB9A9C0002521FE /* NoteTakerApp.app */;
@@ -376,29 +376,29 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		428560332EB9DB71002521FE /* Background */ = {
+		428EA65D2EBB30DD00010211 /* Background */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Background;
 		};
-		428560352EB9DB74002521FE /* DI */ = {
+		428EA65F2EBB30E000010211 /* DI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DI;
 		};
-		428560372EB9DB78002521FE /* Domain */ = {
+		428EA6612EBB30E300010211 /* Domain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Domain;
 		};
-		428560392EB9DB7C002521FE /* Notifications */ = {
+		428EA6632EBB30E600010211 /* Notifications */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Notifications;
 		};
-		4285603D2EB9DB83002521FE /* SharedKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = SharedKit;
-		};
-		428560412EB9E74C002521FE /* Persistence */ = {
+		428EA6652EBB30E900010211 /* Persistence */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Persistence;
+		};
+		428EA6672EBB30EC00010211 /* SharedKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SharedKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
