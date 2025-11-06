@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4237443B2EBC4D3A007A3877 /* AppFeature in Frameworks */ = {isa = PBXBuildFile; productRef = 4237443A2EBC4D3A007A3877 /* AppFeature */; };
 		428EA65E2EBB30DD00010211 /* Background in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA65D2EBB30DD00010211 /* Background */; };
 		428EA6602EBB30E000010211 /* DI in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA65F2EBB30E000010211 /* DI */; };
 		428EA6622EBB30E300010211 /* Domain in Frameworks */ = {isa = PBXBuildFile; productRef = 428EA6612EBB30E300010211 /* Domain */; };
@@ -34,6 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				428EA6622EBB30E300010211 /* Domain in Frameworks */,
+				4237443B2EBC4D3A007A3877 /* AppFeature in Frameworks */,
 				428EA6662EBB30E900010211 /* Persistence in Frameworks */,
 				428EA6682EBB30EC00010211 /* SharedKit in Frameworks */,
 				428EA65E2EBB30DD00010211 /* Background in Frameworks */,
@@ -96,6 +98,7 @@
 				428EA6632EBB30E600010211 /* Notifications */,
 				428EA6652EBB30E900010211 /* Persistence */,
 				428EA6672EBB30EC00010211 /* SharedKit */,
+				4237443A2EBC4D3A007A3877 /* AppFeature */,
 			);
 			productName = NoteTakerApp;
 			productReference = 428560122EB9A9C0002521FE /* NoteTakerApp.app */;
@@ -376,6 +379,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4237443A2EBC4D3A007A3877 /* AppFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AppFeature;
+		};
 		428EA65D2EBB30DD00010211 /* Background */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Background;

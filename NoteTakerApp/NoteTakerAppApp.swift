@@ -9,6 +9,7 @@ import SwiftUI
 import Factory
 import Domain
 import DI
+import AppFeature
 
 @main
 struct NoteTakerAppApp: App {

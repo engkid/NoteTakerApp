@@ -1,10 +1,12 @@
 import SwiftUI
 
-struct ReminderListScreen: View {
+public struct ReminderListScreen: View {
   @StateObject private var vm = ReminderListViewModel()
   @State private var showAddSheet = false
   
-  var body: some View {
+  public init() {}
+  
+  public var body: some View {
     NavigationStack {
       List(vm.reminders) { r in
         VStack(alignment: .leading, spacing: 4) {
